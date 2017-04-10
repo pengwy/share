@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web面试题</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .an{
+            display: none;
+        }
+        .title:hover .an{
+            display: block;
+        }
+        .line-cen{
+            text-align: center;
+        }
+        textarea{
+            width: 500px;
+            height: 50px;
+        }
+        .bot{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container bot">
+
+    <h1 class="line-cen">WEB面试题</h1>
+    <div class="col-md-6 col-sm-12">
+    <div class="title">
+        <h4>1.XHTML和HTML有什么区别</h4>
+        <div class="an">
+            <p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言</p>
+            <ul>
+                <li>XHTML 元素必须被正确地嵌套。</li>
+                <li>XHTML 元素必须被关闭。</li>
+                <li>标签名必须用小写字母。</li>
+                <li>XHTML 文档必须拥有根元素。</li>
+            </ul>
+        </div>
+    </div>
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>2.前端页面有哪三层构成，分别是什么?作用是什么?</h4>
+            <div class="an">
+                <p>
+                    结构层 Html 表示层 CSS 行为层 js;
+                </p>
+            </div>
+        </div>
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>3.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</h4>
+            <div class="an">
+                <p>
+                    Ie(Ie内核) 火狐（Gecko） 谷歌（webkit,Blink） opera(Presto),Safari(wbkit)
+                </p>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>4.什么是语义化的HTML??这些浏览器的内核分别是什么?</h4>
+            <div class="an">
+                <ul>
+                    <li>直观的认识标签 对于搜索引擎的抓取有好处，用正确的标签做正确的事情！</li>
+                    <li>html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；</li>
+                    <li>在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。</li>
+                    <li>搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。</li>
+                    <li>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。</li>
+                </ul>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>5.HTML5 为什么只需要写 !DOCTYPE HTML？</h4>
+            <div class="an">
+                <p>
+                    HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+                </p>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+     <div class="title">
+         <h4>6.Doctype作用？标准模式与兼容模式各有什么区别?</h4>
+         <div class="an">
+             <p>
+                 !DOCTYPE声明位于位于HTML文档中的第一行，处于html 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
+             </p>
+             <p>
+                 标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。
+             </p>
+         </div>
+            </div>
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>7.html5有哪些新特性、移除了那些元素？</h4>
+            <div class="an">
+                <ul>
+                    HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。</br>
+                    绘画 canvas</br>
+                    用于媒介回放的 video 和 audio 元素</br>
+                    本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失；</br>
+                    sessionStorage 的数据在浏览器关闭后自动删除</br>
+                    语意化更好的内容元素，比如 article、footer、header、nav、section</br>
+                    表单控件，calendar、date、time、email、url、search</br>
+                    新的技术webworker, websockt, Geolocation</br>
+                    移除的元素</br>
+                    纯表现的元素：basefont，big，center，font, s，strike，tt，u；</br>
+                    对可用性产生负面影响的元素：frame，frameset，noframes；</br>
+                </ul>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>8.HTML5新标签的浏览器兼容问题？如何区分 HTML 和HTML5？</h4>
+            <div class="an">
+                <ul>
+                    支持HTML5新标签：</br>
+                    IE8/IE7/IE6支持通过document.createElement方法产生的标签，</br>
+                    可以利用这一特性让这些浏览器支持HTML5新标签，</br>
+                    浏览器支持新标签后，还需要添加标签默认的样式：</br>
+                </ul>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>9.请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h4>
+            <div class="an">
+                cookie在浏览器和服务器间来回传递. sessionStorage和localStorage不会</br>
+                sessionStorage和localStorage的存储空间更大</br>
+                sessionStorage和localStorage有更多丰富易用的接口</br>
+                sessionStorage和localStorage各自独立的存储空间</br>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>10.如何实现浏览器内多个标签页之间的通信?</h4>
+            <div class="an">
+                <p>
+                    调用localstorge、cookies等本地存储方式
+                </p>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>11.简要说一下CSS的元素分类
+            </h4>
+            <div class="an">
+                <ul>
+                    <li>块级元素：div,p,h1,form,ul,li;</li>
+                    <li>行内元素 : span>,a,label,input,img,strong,em;</li>
+                </ul>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>12.简要说一下CSS的元素分类
+            </h4>
+            <div class="an">
+                <ul>
+                    <li>块级元素：div,p,h1,form,ul,li;</li>
+                    <li>行内元素 : span>,a,label,input,img,strong,em;</li>
+                </ul>
+            </div>
+        </div>
+
+        <textarea placeholder="写下你答案："></textarea>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>13.CSS隐藏元素的几种方法（至少说出三种）</h4>
+            <div class="an">
+                <ul>
+                    <li> Opacity:元素本身依然占据它自己的位置并对网页的布局起作用。它也将响应用户交互;</li>
+                    <li> Visibility:与 opacity 唯一不同的是它不会响应任何用户交互。此外，元素在读屏软件中也会被隐藏;</li>
+                    <li> Display:display 设为 none 任何对该元素直接打用户交互操作都不可能生效。此外，读屏软件也不会读到元素的内容。这种方式产生的效果就像元素完全不存在;</li>
+                    <li> Position:不会影响布局，能让元素保持可以操作;</li>
+                    <li> Clip-path:clip-path 属性还没有在 IE 或者 Edge 下被完全支持。如果要在你的 clip-path 中使用外部的 SVG 文件，浏览器支持度还要低;</li>
+                </ul>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>14.CSS清楚浮动的几种方法（至少两种）</h4>
+            <div class="an">
+                <ul>
+                    <li>使用带clear属性的空元素</li>
+                    <li> 使用CSS的overflow属性；</li>
+                    <li> 使用CSS的:after伪元素；</li>
+                    <li> 使用邻接元素处理；</li>
+                </ul>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>14.写出几种IE6 BUG的解决方法</h4>
+            <div class="an">
+                <ol>
+                    <li>双边距BUG float引起的 使用display</li>
+                    <li>3像素问题 使用float引起的 使用dislpay:inline -3px</li>
+                    <li>超链接hover 点击后失效 使用正确的书写顺序 link visited hover active</li>
+                    <li>Ie z-index问题 给父级添加position:relative</li>
+                    <li>Png 透明 使用js代码 改</li>
+                    <li>Min-height 最小高度 ！Important 解决’</li>
+                    <li>select 在ie6下遮盖 使用iframe嵌套</li>
+                    <li>为什么没有办法定义1px左右的宽度容器（IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）</li>
+                </ol>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>15.页面导入样式时，使用link和@import有什么区别？
+            </h4>
+            <div class="an">
+                <ul>
+                    <li>link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;</li>
+                    <li> 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;</li>
+                    <li> import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;</li>
+
+                </ul>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>16.介绍一下CSS的盒子模型？</h4>
+            <div class="an">
+               <P>
+                   有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
+               </P>
+                <p>
+                    盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+                </p>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>17.CSS 选择符有哪些？</h4>
+            <div class="an">
+                <ol>
+                    <li>id选择器（ # myid）</li>
+                    <li>类选择器（.myclassname）</li>
+                    <li>标签选择器（div, h1, p）</li>
+                    <li>相邻选择器（h1 + p）</li>
+                    <li>子选择器（ul > li）</li>
+                    <li>后代选择器（li a）</li>
+                    <li>通配符选择器（ * ）</li>
+                    <li>属性选择器（a[rel = “external”]）</li>
+                    <li>伪类选择器（a: hover, li: nth - child）</li>
+                </ol>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>18.哪些属性可以继承？</h4>
+            <div class="an">
+                <p>
+                    可继承的样式： font-size font-family color, UL LI DL DD DT;
+                </p>
+                <p>
+                    不可继承的样式：border padding margin width height ;
+                </p>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>19.优先级算法如何计算？ </h4>
+            <div class="an">
+                <p>
+                    优先级就近原则，同权重情况下样式定义最近者为准;
+                </p>
+                <ul>
+                    <ol>
+                        <li>优先级为:</li>
+                        <li>!important > id > class > tag</li>
+                        <li>important 比 内联优先级高</li>
+                    </ol>
+                </ul>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="title">
+            <h4>20.CSS3有哪些新特性？ </h4>
+            <div class="an">
+                <p>
+                    优先级就近原则，同权重情况下样式定义最近者为准;
+                </p>
+                <ul>
+                        <li>CSS3实现圆角（border-radius:8px），阴影（box-shadow:10px），</li>
+                        <li>对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）</li>
+                        <li>transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜</li>
+                        <li>增加了更多的CSS选择器 多背景 rgba</li>
+                </ul>
+            </div>
+            <textarea placeholder="写下你答案："></textarea>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
