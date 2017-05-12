@@ -48,7 +48,8 @@ var foo = 1;
 
 
 //随机10-100十个数，逆序排列
-/*var numList= new Set();
+/*
+var numList= new Set();
 var arr=[];
 for (var i=0;arr.length=10;i++){
     var num = Math.round(10+(Math.random()*90));
@@ -146,6 +147,7 @@ console.log(data[2]());
 
 //bibao
 
+/*
 var arr=[];
 for(var i =0;i<arr.length;i++){
     arr[i]=(function (x) {
@@ -154,8 +156,92 @@ for(var i =0;i<arr.length;i++){
         }
     })(k)
 }
+*/
+
+/*
+for(var i=1;i<=3;i++){
+   fin(i)
+}
+function fin(i) {
+    console.log(i)
+}
+setTimeout(
+fin(i),0);
+*/
 
 
+/*
+var num = 12345678 +'';
+(function aa() {
+    var numa=num.split('');
+    var c = numa.splice(2,0,',');
+    var b = numa.splice(6,0,',');
+    var f= numa.join('');
+    console.log(f)
+}());
+*/
+
+/*(function () {
+    var numList= new Set();
+    var arr=[];
+    for (var i=0;arr.length=5;i++){
+        var num = Math.round((Math.random()*10));
+        numList.add(num);
+        arr=[...numList];
+       /!* if(arr.length==5){
+            break
+        }*!/
+    }
+    console.log(arr)
+}())*/
+
+/*
+
+var numList= new Set();
+var arr=[];
+for (var i=0;arr.length=10;i++){
+    var num = Math.round(10+(Math.random()*90));
+    numList.add(num);
+    arr=[...numList];
+    if(arr.length==10){
+        break
+    }
+}
+var fished=(arr.sort(function (a,b) {
+    return b-a
+}));
+alert(fished);*/
 
 
+/*
+function m(a,b) {
+    var v
+    for(var i = 0 ;i<999;i++){
+         v = a-b*i;
+        if(v<0){
+            break
+        }
+    }
+    console.log(v+b)
+}
+m(12,5)*/
+/*for(var i=0;i<5;++i){
+    setTimeout((function(){
+        console.log(i+'');
+    }(i)),100*i);
+}*/
 
+
+(function () {
+    var num= [5,2,3,6,8,6,5,4,7,1,9];
+    var hh = new Set(num);
+    var m = Array.from(hh)
+
+     f=  m.sort(function (a,b) {
+        return b-a
+    })
+
+
+   console.log(f)
+
+}())

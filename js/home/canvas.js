@@ -18,6 +18,7 @@ function drawb() {
     ctx.save();
     ctx.translate(r,r);
     ctx.beginPath();
+
     ctx.lineWidth = 10 * rem;
     ctx.arc(0,0,r-ctx.lineWidth/2,0,2*Math.PI,false);
     ctx.stroke();
@@ -102,12 +103,6 @@ function drawc() {
     ctx.arc(0,0,3* rem,0,2*Math.PI,false);
     ctx.fill();
 }
-
-
-
-
-
-
 
 
 function draw() {
